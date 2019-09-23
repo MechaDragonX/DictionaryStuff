@@ -11,7 +11,7 @@ namespace DictionaryStuff
         static void Main(string[] args)
         {
             GetFile();
-            Console.WriteLine("\nPossible Commands:\n\"find\": Find how times a word appears in the file\n\"count\": Show all word counts\"exit\": Exit the program");
+            Console.WriteLine("\nPossible Commands:\n\"find\": Find how times a word appears in the file\n\"count\": Show all word counts\n\"exit\": Exit the program");
             Execute();
         }
         private static void GetFile()

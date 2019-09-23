@@ -52,6 +52,11 @@ namespace DictionaryStuff
                             Thread.Sleep(1000);
                             break;
                         }
+                    case "count":
+                        {
+                            WriteAllResults(words);
+                            break;
+                        }
                     default:
                         {
                             Console.ForegroundColor = ConsoleColor.Red;
@@ -116,8 +121,9 @@ namespace DictionaryStuff
         {
             foreach(KeyValuePair<string, int> kvp in words)
             {
-                Console.WriteLine("Key = {0}\tValue = {1}", kvp.Key, kvp.Value);
+                Console.WriteLine("Word = {0}\tNumber = {1}", kvp.Key, kvp.Value);
             }
+            Console.WriteLine("\nThere are {0} unique words in the file!\n", words.Count);
         }
     }
 }
